@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: url('');
+      /* Add background image URL here */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 150vh;
+      margin: 0;
+      color: #333;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+      max-width: 450px;
+      width: 100%;
+      border: 2px solid #00ced1;
+    }
+
+    .form-container h2 {
+      margin-bottom: 30px;
+      color: #00ced1;
+      text-align: center;
+      font-size: 26px;
+      font-weight: 700;
+    }
+
+    .form-group {
+      margin-bottom: 18px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 600;
+      font-size: 16px;
+      color: #333;
+    }
+
+    .form-group input,
+    .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #ddd;
+      border-radius: 8px;
+      font-size: 16px;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .form-group input:focus,
+    .form-group select:focus {
+      border-color: #00ced1;
+      outline: none;
+      box-shadow: 0 0 8px rgba(0, 206, 209, 0.4);
+    }
+
+    .form-group input[type="submit"] {
+      background: #00ced1;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      padding: 15px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .form-group input[type="submit"]:hover {
+      background-color: #00bcd4;
+      transform: translateY(-2px);
+    }
+
+    .form-group input[type="submit"]:active {
+      background-color: #00a4a7;
+      transform: translateY(0);
+    }
+
+    .form-group .info-text {
+      font-size: 14px;
+      color: #666;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .form-group .info-text a {
+      color: #00ced1;
+      text-decoration: none;
+    }
+
+    .form-group .info-text a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="form-container">
+    <h2>Register</h2>
+    <form action="/submit" method="post">
+      <div class="form-group">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first_name" required>
+      </div>
+      <div class="form-group">
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last_name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+      </div>
+      <div class="form-group">
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address">
+      </div>
+      <div class="form-group">
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+      </div>
+      <div class="form-group">
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Register">
+      </div>
+      <div class="info-text">
+        Already have an account? <a href="#">Login here</a>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

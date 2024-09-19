@@ -1,0 +1,238 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  color: #333;
+  line-height: 1.6;
+  background: #f4f4f4;
+}
+
+/* Header */
+header {
+  font-size: 1.2rem; /* Increase the overall font size */
+}
+
+.nav-link {
+  font-size: 1.1rem; /* Specific font size for the navigation links */
+}
+
+.btn {
+  font-size: 1.1rem; /* Increase button font size */
+}
+header {
+  background-color: rgba(0, 0, 0);
+  color: white;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ddd;
+}
+
+.gap{
+  height: 30px;
+  background-color: white;
+}
+
+.main2{
+  height: 100vh;
+  background-color: #00e5c9;
+}
+
+/* Main content styling */
+main {
+  padding-top: 100px;
+  background: url('https://cdn.pixabay.com/photo/2018/05/02/21/36/transport-3369756_1280.jpg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+section {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.side1 {
+  flex: 2;  /* Increased to give more space */
+  padding: 20px;
+}
+
+.side1 h1 {
+  font-size: 39px;
+  color: #00e5c9;
+  margin-bottom: 10px;
+}
+
+.side1 h2 {
+  font-size: 23.5px;
+  color: #00ced1;
+  margin-bottom: 20px;
+}
+
+.side1 p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.side1 button {
+  background-color: #00ced1;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.side1 button:hover {
+  background-color: #008b8b;
+}
+
+.side1 button a {
+  text-decoration: none;
+  color: white;
+}
+
+.side2 {
+  flex: 1; /* Reduced flex size */
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.side2 img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Registration Section */
+.registration-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+  width: 100%; /* Full width of the side2 section */
+}
+
+.registration-options button {
+  background-color: #00ced1;
+  color: black;
+  padding: 15px 30px;
+  margin-bottom: 15px;
+  margin-left: 2px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Button takes the full width */
+}
+
+.registration-options button:hover {
+  background-color: #008b8b;
+}
+
+.registration-options button a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #00ced1;
+  color: black;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .side1 h1 {
+    font-size: 28px;
+  }
+
+  .side1 p {
+    font-size: 16px;
+  }
+
+  .side2 {
+    padding-left: 0;
+    width: 100%; /* Ensures the side2 section takes full width */
+  }
+
+  .registration-options {
+    width: 100%; /* Adjust to take full width */
+  }
+
+  .side2 img {
+    margin-bottom: 20px; /* Add spacing below the image */
+  }
+
+  main {
+    height: auto;
+    padding-bottom: 50px;
+  }
+}
