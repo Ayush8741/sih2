@@ -62,16 +62,12 @@ nav a:hover {
   background-color: white;
 }
 
-.main2{
-  height: 100vh;
-  background-color: #00e5c9;
-}
 
 /* Main content styling */
 main {
   padding-top: 100px;
   background: url('https://cdn.pixabay.com/photo/2018/05/02/21/36/transport-3369756_1280.jpg') center/cover no-repeat;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,13 +93,13 @@ section {
 
 .side1 h1 {
   font-size: 39px;
-  color: #00e5c9;
+  color: #E4B1F0;
   margin-bottom: 10px;
 }
 
 .side1 h2 {
   font-size: 23.5px;
-  color: #00ced1;
+  color: #FFE1FF;
   margin-bottom: 20px;
 }
 
@@ -113,7 +109,7 @@ section {
 }
 
 .side1 button {
-  background-color: #00ced1;
+  background-color: #7E60BF;
   color: black;
   padding: 10px 20px;
   border: none;
@@ -159,10 +155,10 @@ section {
 }
 
 .registration-options button {
-  background-color: #00ced1;
+  background-color: #7E60BF;
   color: black;
   padding: 15px 30px;
-  margin-bottom: 15px;
+  margin-bottom: 7.3px;
   margin-left: 2px;
   border: none;
   border-radius: 5px;
@@ -173,7 +169,7 @@ section {
 }
 
 .registration-options button:hover {
-  background-color: #008b8b;
+  background-color: #E4B1F0;
 }
 
 .registration-options button a {
@@ -186,8 +182,8 @@ section {
 
 /* Footer */
 footer {
-  background-color: #00ced1;
-  color: black;
+  background-color: #433878;
+  color: white;
   padding: 20px;
   text-align: center;
   position: relative;
@@ -234,5 +230,50 @@ footer p {
   main {
     height: auto;
     padding-bottom: 50px;
+  }
+}
+.hero-section {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  /* flex: 1 0 100%; */
+
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
+
+.active {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
