@@ -247,7 +247,7 @@ footer p {
 
 .slides {
   display: flex;
-  width: 300%;
+  width: 200%;
   height: 100%;
   transition: transform 0.5s ease-in-out;
 }
